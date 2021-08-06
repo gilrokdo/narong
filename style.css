@@ -1,0 +1,38 @@
+a{
+  text-decoration : none;
+  color : inherit;
+}
+h1{
+  font-size: 4em;
+  text-align: center;
+  border-bottom : 1px solid grey;
+  margin : 0px;
+}
+#grid {
+  display : grid;
+  grid-template-columns: 200px 1fr;
+}
+#grid ol{
+  padding: 30px;
+  margin : 0px ;
+  padding-top : 10px;
+  padding-bottom : 10px;
+}
+#context {
+  border-left : 1px solid grey;
+  padding-left : 20px;
+}
+
+@media(max-width : 800px) {
+  #grid {
+    display : flex;
+    flex-direction: column;
+  }
+  #grid ol {
+    border-bottom : 1px solid grey;
+  }
+  #context {
+    border-left : none;
+  }
+
+}
